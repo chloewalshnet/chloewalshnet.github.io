@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}About - Chloe Walsh{% endblock %}
+{% block content %}
+<h1>{{ page.title }}</h1>
+{% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
+
+<div class="about-container">
+  <div class="about-image-container">
+    {% if page.headshot %}
+      <img src="{{ page.headshot }}" alt="Chloe Walsh" class="about-headshot" crossorigin="anonymous">
+    {% else %}
+      <img src="https://picsum.photos/seed/chloe_headshot/500/500" alt="Chloe Walsh" class="about-headshot">
+    {% endif %}
+    
+    <div class="about-social-links">
+      <a href="https://github.com/" target="_blank" class="social-btn">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://linkedin.com/" target="_blank" class="social-btn">
+        <i class="fab fa-linkedin-in"></i> LinkedIn
+      </a>
+      <a href="mailto:contact@chloewalsh.net" class="social-btn">
+        <i class="far fa-envelope"></i> Email Me
+      </a>
+      <a href="resume.html" class="social-btn">
+        <i class="far fa-file-alt"></i> Resume
+      </a>
+    </div>
+  </div>
+  
+  <div class="about-content">
+    <div class="about-text-grid">
+      {{ page.content | safe }}
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,38 @@
+---
+title: Echoes of Ecrea
+subtitle: System Design RPG
+excerpt: A systems-heavy RPG with interconnected mechanics creating emergent gameplay experiences.
+description: A systems-heavy RPG focused on interconnected gameplay mechanics and a dynamic world that reacts to player choices.
+technologies: [Godot Engine, GDScript, JSON]
+order: 5
+image: /assets/projects/echoes-of-ecrea-systems.jpg
+---
+
+# Echoes of Ecrea
+
+Echoes of Ecrea is a systems design focused RPG that explores how interconnected gameplay mechanics can create emergent gameplay experiences. The game features a dynamic world where player actions have far-reaching consequences across multiple systems.
+
+## Key Features
+
+- **Ecosystem Simulation**: Wildlife, vegetation, and resources that respond to player actions
+- **Dynamic Economy**: Markets that fluctuate based on supply, demand, and player intervention
+- **Faction Relationships**: Multiple groups with their own goals and relationships that change over time
+- **Crafting System**: Deep crafting mechanics with hundreds of recipes and resource combinations
+
+## Development Process
+
+Developed in Godot Engine, Echoes of Ecrea was an exercise in creating highly interconnected systems. The project uses extensive data structures to track relationships between entities in the game world, allowing for complex cause-and-effect relationships that create unique gameplay experiences.
+
+<img src="/assets/projects/echoes-of-ecrea-systems.jpg" alt="Echoes of Ecrea Systems Map" class="project-image" />
+
+## Technical Achievement
+
+The most significant technical achievement in this project was developing a system that could efficiently simulate dozens of interconnected systems without creating performance bottlenecks. This required careful optimization and thoughtful data structure design.
+
+## Gallery
+
+<div class="project-gallery">
+  <img src="/assets/projects/echoes-of-ecrea-card1.jpg" alt="Ecosystem simulation" class="gallery-card" />
+  <img src="/assets/projects/echoes-of-ecrea-card2.jpg" alt="Economic systems" class="gallery-card" />
+  <img src="/assets/projects/echoes-of-ecrea-card3.jpg" alt="Faction interactions" class="gallery-card" />
+</div>

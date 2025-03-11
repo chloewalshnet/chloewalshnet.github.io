@@ -1,0 +1,64 @@
+---
+title: Divine Ruin
+subtitle: RPG Prototype
+excerpt: Set in a world inspired by Greek Mythology, Divine Ruin is a top-down RPG prototype that explores themes of guilt, isolation, and identity.
+description: Set in a world inspired by Greek Mythology, Divine Ruin is a top-down RPG prototype that explores themes of guilt, isolation, and identity.
+technologies: [Unreal Engine, Blueprint, Unreal Dialogue Plugin]
+order: 2
+image: /assets/projects/divine-ruin-screenshot.jpg
+---
+
+
+
+## Overview
+
+Set in a world inspired by Greek Mythology, Divine Ruin is a top-down RPG prototype that explores themes of guilt, isolation, and identity. Players take on the role of Heron, a retired warrior who becomes caught in the petty affairs of the gods. Though he had resigned himself to a lonely life, he’s chosen by Psyche to enter the god’s sacred sanctuaries to see why they had changed their hearts so rapidly. 
+
+The game features a strong emphasis on character development, dialogue-driven interactions, and story pacing. While the basic dialogue system was prototyped, the project is still a work in progress.
+
+**Role:** 
+
+- Creator
+- Narrative Designer
+
+**Skills:** 
+
+- Narrative Design
+- Quest Design
+- Dialogue Systems
+- World Building
+
+
+## Design Process
+
+Divine Ruin started as a story-forward 2D platformer and was approved by my professor when pitched. However, in the weeks after, with feedback from my professor, I pivoted Divine Ruin away from being a platformer and into an RPG.  This was due to multiple reasons and was mainly concerned with my interest in narrative design. 
+
+With the pivot, I was allowed to focus on dialogue,  which I was excited about. As a fan of games like Disco Elysium and Baldurs Gate 3, I wanted to create a story that featured impactful dialogue. Choices and consequences were my main goals. 
+
+## Challenges
+
+Using a dialogue plugin came with its advantages, like not having to design a complex dialogue system, but it also came with its disadvantages. Wrestling with the plugin in Unreal 
+
+**Branching Dialogue:**
+
+- After using Google Docs.
+
+## Reflection & Learnings
+
+**Suceesses:**
+
+- ...
+
+**Shortcomings:**
+
+- ...
+
+**Learnings:**
+
+- Though still a work in progress, making the initial prototype for Divine Ruin taught me about scope. 
+
+## Gallery
+
+<div class="project-gallery">
+  <img src="../content/assets/images/divine-ruin/dialogue.png" alt="Dialogue System" class="gallery-card" />
+</div>

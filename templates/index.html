@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}Chloe Walsh | Game Developer{% endblock %}
+{% block content %}
+<section id="hero">
+    <h1>Chloe Walsh</h1>
+    <h2>Game Developer & Designer</h2>
+    <p>Creating engaging gameplay experiences through thoughtful mechanics and systems design.</p>
+</section>
+
+<section id="projects-section">
+    <h2>Projects</h2>
+    <div class="projects-container">
+        {% for project in projects %}
+        <div class="project-card">
+            {% if project.image %}
+            <div class="card-image">
+                <img src="{{ project.image }}" alt="{{ project.title }}">
+            </div>
+            {% endif %}
+            <div class="card-content">
+                <h3>{{ project.title }}</h3>
+                <h4>{{ project.subtitle }}</h4>
+                <p>{{ project.excerpt }}</p>
+                <div class="tech-tags">
+                    {% for tech in project.technologies %}
+                    <span class="tag">{{ tech }}</span>
+                    {% endfor %}
+                </div>
+                <div class="card-links">
+                    <a href="{{ project.filename }}.html" class="view-button">View Project</a>
+                    {% if project.github %}
+                    <a href="{{ project.github }}" class="github-link">GitHub</a>
+                    {% endif %}
+                    {% if project.demo %}
+                    <a href="{{ project.demo }}" class="demo-link">Live Demo</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section id="about-preview">
+    <h2>About Me</h2>
+    <div class="about-content" style="text-align: center;">
+        {{ about.excerpt }}
+        <br>
+        <a href="about.html" class="read-more-link">Read more</a>
+    </div>
+</section>
+{% endblock %}

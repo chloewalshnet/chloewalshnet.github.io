@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}{{ blog.title }} - Chloe Walsh{% endblock %}
+{% block content %}
+<article class="blog-post">
+  <h1 class="blog-title">{{ blog.title }}</h1>
+  {% if blog.subtitle %}<p class="blog-subtitle">{{ blog.subtitle }}</p>{% endif %}
+  
+  <div class="blog-meta">
+    {% if blog.date %}
+    <div class="meta-item">
+      <i class="far fa-calendar"></i>
+      <span>{{ blog.date }}</span>
+    </div>
+    {% endif %}
+    
+    {% if blog.author %}
+    <div class="meta-item">
+      <i class="far fa-user"></i>
+      <span>{{ blog.author }}</span>
+    </div>
+    {% endif %}
+    
+    {% if blog.category %}
+    <div class="meta-item">
+      <i class="far fa-folder"></i>
+      <span>{{ blog.category }}</span>
+    </div>
+    {% endif %}
+  </div>
+  
+  {% if blog.image %}
+  <img src="{{ blog.image }}" alt="{{ blog.title }}" class="blog-image">
+  {% endif %}
+  
+  <div class="blog-content">
+    {{ blog.content | safe }}
+  </div>
+  
+  {% if blog.tags %}
+  <div class="tags">
+    {% for tag in blog.tags %}
+    <span class="tag">{{ tag }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+</article>
+{% endblock %}

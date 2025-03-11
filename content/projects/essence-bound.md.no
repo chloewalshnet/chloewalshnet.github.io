@@ -1,0 +1,38 @@
+---
+title: Essence Bound
+subtitle: Narrative Proof of Concept
+excerpt: A narrative system where character relationships and player decisions create emergent storytelling.
+description: A narrative-focused proof of concept exploring dynamic storytelling systems and branching dialogue.
+technologies: [Twine, JavaScript, JSON]
+order: 3
+image: /assets/projects/essence-bound-screen.jpg
+---
+
+# Essence Bound
+
+Essence Bound is a narrative proof of concept that demonstrates advanced storytelling systems. The project explores how complex character relationships and player decisions can create emergent storytelling opportunities.
+
+## Key Features
+
+- **Relationship System**: Characters remember interactions and adjust behavior accordingly
+- **Branching Dialogue**: Conversations that adapt based on previous choices
+- **Memory System**: Game world retains player actions and references them in future scenarios
+- **Procedural Narrative Elements**: Some story components adjust dynamically based on player preferences
+
+## Development Process
+
+This project was built using a combination of Twine for rapid prototyping and custom JavaScript to handle the more complex relationship tracking systems. The goal was to create a framework that could support rich narrative experiences that feel personalized to each player.
+
+<img src="/assets/projects/essence-bound-screen.jpg" alt="Essence Bound Narrative Screen" class="project-image" />
+
+## Insights
+
+The most valuable lesson from this project was understanding how to balance authored content with procedural elements. Too much scripted content limits flexibility, while too much procedural generation can feel random and meaningless. Finding the right balance was key to creating memorable narrative moments.
+
+## Gallery
+
+<div class="project-gallery">
+  <img src="/assets/projects/essence-bound-card1.jpg" alt="Dialogue system" class="gallery-card" />
+  <img src="/assets/projects/essence-bound-card2.jpg" alt="Character relationships" class="gallery-card" />
+  <img src="/assets/projects/essence-bound-card3.jpg" alt="Story branching" class="gallery-card" />
+</div>

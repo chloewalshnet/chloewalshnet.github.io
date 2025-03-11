@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}{{ project.title }} | Chloe Walsh{% endblock %}
+{% block content %}
+<article class="project-details">
+    <header class="project-header">
+        <h1>{{ project.title }}</h1>
+        <h2>{{ project.subtitle }}</h2>
+        {% if project.technologies %}
+        <div class="tech-tags">
+            {% for tech in project.technologies %}
+            <span class="tag">{{ tech }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+        <div class="project-links">
+            {% if project.github %}
+            <a href="{{ project.github }}" class="button github-button">View on GitHub</a>
+            {% endif %}
+            {% if project.demo %}
+            <a href="{{ project.demo }}" class="button demo-button">Try Live Demo</a>
+            {% endif %}
+        </div>
+    </header>
+
+    <section class="project-content">
+        {{ project.content | safe }}
+    </section>
+    
+    <div class="back-to-portfolio">
+        <a href="portfolio.html">&larr; Back to Portfolio</a>
+    </div>
+</article>
+{% endblock %}

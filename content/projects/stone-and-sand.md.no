@@ -1,0 +1,38 @@
+---
+title: Stone and Sand
+subtitle: Puzzle RPG Prototype
+excerpt: Stone and Sand is a 2D game I developed that blends narrative-driven exploration with puzzle mechanics centered around riddles and turn-based combat. 
+description: Stone and Sand is a 2D game I developed that blends narrative-driven exploration with puzzle mechanics centered around riddles and turn-based combat.
+technologies: [Unity]
+order: 1
+image: ../content/assets/images/stone-and-sand/main.gif
+---
+
+# Stone and Sand
+
+Stone and Sand is a puzzle RPG prototype that merges challenging puzzle mechanics with role-playing elements. The game features a unique tile-based system where players must navigate through increasingly complex scenarios.
+
+## Key Features
+
+- **Dynamic Puzzle System**: Combine stone and sand elements to solve environmental puzzles
+- **Character Progression**: Develop your character through a traditional RPG leveling system
+- **Adaptive Difficulty**: Puzzles that adapt to player skill level
+- **Atmospheric Design**: Minimalist art style with immersive sound design
+
+## Development Process
+
+The prototype was developed in Unity using custom C# scripts for the puzzle mechanics. Shader Graph was utilized to create the distinctive visual effects for the stone and sand elements. The project focused on creating a core gameplay loop that would be both challenging and rewarding.
+
+<img src="/assets/projects/stone-and-sand-gameplay.jpg" alt="Stone and Sand Gameplay" class="project-image" />
+
+## Technical Challenges
+
+The most challenging aspect was designing puzzles that remained engaging without becoming frustratingly difficult. I implemented an adaptive hint system that provides subtle guidance based on player performance.
+
+## Gallery
+
+<div class="project-gallery">
+  <img src="/assets/projects/stone-and-sand-card1.jpg" alt="Puzzle mechanics" class="gallery-card" />
+  <img src="/assets/projects/stone-and-sand-card2.jpg" alt="Character progression" class="gallery-card" />
+  <img src="/assets/projects/stone-and-sand-card3.jpg" alt="Environment design" class="gallery-card" />
+</div>

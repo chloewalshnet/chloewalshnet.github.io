@@ -1,0 +1,29 @@
+---
+title: Tactical Towers
+subtitle: Tower Defense Game Jam
+description: A unique tower defense game created during a 48-hour game jam that features dynamic resource management and emergent gameplay.
+technologies: [Unity, C#, Procedural Generation]
+image: /assets/projects/stone-and-sand-gameplay.jpg
+order: 6
+---
+
+# Tactical Towers
+
+Tactical Towers is a tower defense game developed during a 48-hour game jam. The project challenges conventional tower defense mechanics by introducing dynamic resource zones and enemy adaptation systems that force players to constantly rethink their strategies.
+
+## Key Features
+
+- **Shifting Resource Zones**: Defense resource generation changes location throughout gameplay
+- **Enemy Evolution**: Enemies adapt to player strategies, requiring tactical flexibility
+- **Environmental Manipulation**: Players can modify the battlefield to create choke points
+- **Upgrade Synergies**: Towers can combine effects when placed in proximity to complementary types
+
+## Development Process
+
+The limited time frame of the game jam required focused development and careful scope management. Using Unity's particle systems and shader tools, I was able to quickly prototype visually distinct tower types and enemy behaviors. Procedural level generation allowed for high replayability despite the short development timeline.
+
+![Tactical Towers Gameplay](../content/assets/projects/tactical-towers-gameplay.jpg)
+
+## Game Jam Experience
+
+This project won the "Most Innovative Mechanics" award at the game jam. The greatest challenge was implementing the enemy adaptation system within the tight deadline, which required efficient algorithms to analyze player strategies and generate appropriate responses without causing performance issues.

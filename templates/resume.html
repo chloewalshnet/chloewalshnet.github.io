@@ -1,0 +1,36 @@
+{% extends "page.html" %}
+{% block title %}Resume - Chloe Walsh{% endblock %}
+{% block content %}
+<article>
+  <h1>{{ page.title }}</h1>
+  {% if page.subtitle %}<p><em>{{ page.subtitle }}</em></p>{% endif %}
+  
+  <div class="resume-download">
+    <a href="assets/Chloe_Walsh_Resume.pdf" download class="btn btn-download">
+      <i class="fas fa-file-download"></i> Download Resume
+    </a>
+  </div>
+  
+  <div class="resume-content">
+    {{ page.content | safe }}
+  </div>
+  
+  {% if page.skills %}
+  <div class="resume-section">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      {% for category, skills in page.skills.items() %}
+        <div class="skill-category">
+          <h3>{{ category }}</h3>
+          <ul>
+            {% for skill in skills %}
+              <li>{{ skill }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+</article>
+{% endblock %}
