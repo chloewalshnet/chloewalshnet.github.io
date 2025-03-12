@@ -3,7 +3,7 @@ title: Mutant Malfunction
 subtitle: Tower Defense Game Jam
 description: A tower defense game that I made with a small team in a week. 
 excerpt: A tower defense game that I made with a small team in a week. 
-technologies: [Unity, C#, Procedural Generation]
+technologies: [Unity, C#]
 image: ../content/assets/images/mutant/logo.png
 order: 6
 ---
