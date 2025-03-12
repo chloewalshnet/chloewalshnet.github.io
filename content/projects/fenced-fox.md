@@ -9,7 +9,7 @@ image: ../content/assets/images/fenced-fox/pen.png
 ---
 
 <video width="100%" controls>
-  <source src="../content/assets/images/divine-ruin/Divine Ruin Screen.mp4" type="video/mp4">
+  <source src="../content/assets/images/fenced-fox/FF_Screen.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
