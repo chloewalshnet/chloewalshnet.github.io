@@ -3,7 +3,7 @@ title: Stone and Sand
 subtitle: Puzzle RPG Prototype
 excerpt: Stone and Sand is a 2D RPG that I made as my final project in rapid game development. It integrates turn-based combat with puzzles centered around riddles.
 description: Stone and Sand is a 2D RPG that I made as my final project in rapid game development. It integrates turn-based combat with puzzles centered around riddles.
-technologies: [Unity]
+technologies: [Unity, C#]
 order: 1
 image: ../content/assets/images/stone-and-sand/fig1.png
 ---
