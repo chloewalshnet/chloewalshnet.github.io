@@ -5,7 +5,7 @@ description: A tower defense game that I made with a small team in a week.
 excerpt: A tower defense game that I made with a small team in a week. 
 technologies: [Unity, C#]
 image: ../content/assets/images/mutant/logo.png
-order: 6
+order: 3
 ---
 
 **Genre:** 2D RPG
@@ -17,6 +17,10 @@ order: 6
 **Engine:** Unity
 
 **Timeframe:** 1 Week
+
+<iframe width="720" height="480"
+src="https://www.youtube.com/embed/Nhz9Nz6T5i0?autoplay=1&mute=1">
+</iframe>
 
 <a class="view-button" href="https://zahtahvi.itch.io/mutant-malfunction">Check out the itch.io page!</a>
 

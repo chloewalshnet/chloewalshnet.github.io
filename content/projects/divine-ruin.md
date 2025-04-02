@@ -8,11 +8,10 @@ order: 5
 image: ../content/assets/images/divine-ruin/dialogue.png
 ---
 
+<iframe width="720" height="480"
+src="https://www.youtube.com/embed/2PhhLuQ0KWg?autoplay=1&mute=1">
+</iframe>
 
-<video width="100%" controls>
-  <source src="../content/assets/images/divine-ruin/Divine Ruin Screen.mp4" type="video/mp4">
-  Your browser does not support the video tag. 
-</video>
 
 **Genre:** 3D RPG
 

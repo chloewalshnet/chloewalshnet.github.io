@@ -8,10 +8,9 @@ order: 2
 image: ../content/assets/images/fenced-fox/pen.png
 ---
 
-<video width="100%" controls>
-  <source src="../content/assets/images/fenced-fox/FF_Screen.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<iframe width="720" height="480"
+src="https://www.youtube.com/embed/qt1ALED-TLk?autoplay=1&mute=1">
+</iframe>
 
 **Genre:** 2D Puzzle
 

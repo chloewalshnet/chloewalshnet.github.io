@@ -8,10 +8,9 @@ order: 1
 image: ../content/assets/images/stone-and-sand/fig1.png
 ---
 
-<video width="100%" controls>
-  <source src="../content/assets/images/stone-and-sand/SS_Video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<iframe width="720" height="480"
+src="https://www.youtube.com/embed/Pici75jJOtY?autoplay=1&mute=1">
+</iframe>
 
 **Genre:** 2D RPG
 
