@@ -5,7 +5,7 @@ excerpt: Fenced Fox is a puzzle game where players rearrange fences by clicking 
 description: Fenced Fox is a puzzle game where players rearrange fences by clicking and dragging them, opening new paths to navigate maze-like levels full of obstacles while also paying attention to the amount of time they have left. 
 technologies: [Unity, C#]
 order: 2
-image: ../content/assets/images/fenced-fox/pen.png
+image: ../content/assets/update_4_3_25/FencedFox.png
 ---
 
 <iframe width="720" height="480"

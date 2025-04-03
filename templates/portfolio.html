@@ -9,8 +9,10 @@
     <div class="project-card">
         {% if project.image %}
         <div class="card-image">
-            <a href="{{ project.filename }}.html"><img src="{{ project.image }}" alt="{{ project.title }}" style="object-fit: contain;"></a>
-        </div>
+            <a href="{{ project.filename }}.html">
+              <img src="{{ project.image }}" alt="{{ project.title }}">
+            </a>
+        </div>          
         {% endif %}
         <div class="card-content">
             <h3>{{ project.title }}</h3>

@@ -5,7 +5,7 @@ excerpt: A narrative system where character relationships and player decisions c
 description: A narrative-focused proof of concept exploring dynamic storytelling systems and branching dialogue.
 technologies: [Word]
 order: 4
-image: ../content/assets/images/essence/Twine.png
+image: ../content/assets/update_4_3_25/Essence.png
 ---
 
 **Genre:** 2D RPG
