@@ -324,26 +324,59 @@ a:hover {
   border-radius: 2px;
   font-size: 0.8rem;
   white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.tag:hover {
+  background-color: var(--ms-gray-40);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tag:active {
+  transform: translateY(0);
 }
 
 .tag:nth-child(5n+1) {
   border-left: 3px solid var(--ms-blue);
 }
 
+.tag:nth-child(5n+1):hover {
+  background-color: rgba(0, 120, 212, 0.1);
+}
+
 .tag:nth-child(5n+2) {
   border-left: 3px solid var(--ms-accent);
+}
+
+.tag:nth-child(5n+2):hover {
+  background-color: rgba(16, 124, 16, 0.1);
 }
 
 .tag:nth-child(5n+3) {
   border-left: 3px solid var(--ms-purple);
 }
 
+.tag:nth-child(5n+3):hover {
+  background-color: rgba(134, 97, 197, 0.1);
+}
+
 .tag:nth-child(5n+4) {
   border-left: 3px solid var(--ms-red);
 }
 
+.tag:nth-child(5n+4):hover {
+  background-color: rgba(216, 59, 1, 0.1);
+}
+
 .tag:nth-child(5n+5) {
   border-left: 3px solid var(--ms-yellow);
+}
+
+.tag:nth-child(5n+5):hover {
+  background-color: rgba(255, 185, 0, 0.1);
 }
 
 .card-links {
@@ -979,4 +1012,94 @@ footer {
   z-index: 1; /* Lower than navbar if navbar is fixed with a higher z-index */
   background-color: #fff; /* Changed from var(--dark-content) to white */
   padding: 1rem;
+}
+
+/* Filter Tags Row */
+.filter-container {
+  margin: 1.5rem 0 2rem;
+  background-color: white;
+  padding: 1.2rem;
+  border-radius: 2px;
+  box-shadow: 0 2px 6px var(--ms-shadow);
+  border: 1px solid var(--ms-gray-40);
+}
+
+.filter-label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: var(--ms-gray-160);
+}
+
+.filter-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-tag {
+  background-color: var(--ms-gray-20);
+  color: var(--ms-gray-160);
+  padding: 0.3rem 0.6rem;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.filter-tag:hover {
+  background-color: var(--ms-gray-30);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.filter-tag.active {
+  font-weight: 600;
+  border-left: 3px solid var(--ms-blue);
+  background-color: rgba(0, 120, 212, 0.1);
+  transform: translateY(-1px);
+}
+
+/* Style the filter tags with different colors like the project tags */
+.filter-tag:nth-child(5n+1) {
+  border-left: 3px solid var(--ms-blue);
+}
+
+.filter-tag:nth-child(5n+2) {
+  border-left: 3px solid var(--ms-accent);
+}
+
+.filter-tag:nth-child(5n+3) {
+  border-left: 3px solid var(--ms-purple);
+}
+
+.filter-tag:nth-child(5n+4) {
+  border-left: 3px solid var(--ms-red);
+}
+
+.filter-tag:nth-child(5n+5) {
+  border-left: 3px solid var(--ms-yellow);
+}
+
+.filter-tag:not(.active) {
+  opacity: 0.8;
+}
+
+.filter-tag.active[data-filter="all"] {
+  border-left: 3px solid var(--ms-gray-130);
+  background-color: rgba(96, 94, 92, 0.1);
+}
+
+/* Responsive styling for the filter tags */
+@media (max-width: 768px) {
+  .filter-tags {
+    justify-content: flex-start;
+  }
+  
+  .filter-tag {
+    font-size: 0.85rem;
+    padding: 0.25rem 0.5rem;
+  }
 }

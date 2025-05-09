@@ -4,9 +4,19 @@
 <h1>Portfolio</h1>
 <p>A collection of my game development projects and prototypes.</p>
 
-<div class="projects-container">
+<div class="filter-container">
+    <div class="filter-label">Filter by tag:</div>
+    <div class="filter-tags">
+        <span class="filter-tag active" data-filter="all">All</span>
+        {% for tag in all_tags %}
+        <span class="filter-tag" data-filter="{{ tag }}">{{ tag }}</span>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="projects-container" id="projects-container">
     {% for project in projects %}
-    <div class="project-card">
+    <div class="project-card" data-tags="{{ project.technologies|join(',') }}">
         {% if project.image %}
         <div class="card-image">
             <a href="{{ project.filename }}.html">
@@ -20,7 +30,7 @@
             <p>{{ project.excerpt }}</p>
             <div class="tech-tags">
                 {% for tech in project.technologies %}
-                <span class="tag">{{ tech }}</span>
+                <span class="tag" onclick="filterProjects('{{ tech }}')">{{ tech }}</span>
                 {% endfor %}
             </div>
             <div class="card-links">
@@ -36,4 +46,50 @@
     </div>
     {% endfor %}
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterTags = document.querySelectorAll('.filter-tag');
+        
+        filterTags.forEach(tag => {
+            tag.addEventListener('click', function() {
+                // Remove active class from all tags
+                filterTags.forEach(t => t.classList.remove('active'));
+                
+                // Add active class to the clicked tag
+                this.classList.add('active');
+                
+                // Get the filter value from the tag
+                const filterValue = this.getAttribute('data-filter');
+                
+                // Apply filtering
+                filterProjects(filterValue);
+            });
+        });
+    });
+    
+    function filterProjects(filterValue) {
+        const projects = document.querySelectorAll('.project-card');
+        
+        projects.forEach(project => {
+            const tags = project.getAttribute('data-tags').split(',');
+            
+            if (filterValue === 'all' || tags.includes(filterValue)) {
+                project.style.display = '';
+            } else {
+                project.style.display = 'none';
+            }
+        });
+        
+        // Update active state in filter tags
+        const filterTags = document.querySelectorAll('.filter-tag');
+        filterTags.forEach(tag => {
+            if (tag.getAttribute('data-filter') === filterValue) {
+                tag.classList.add('active');
+            } else {
+                tag.classList.remove('active');
+            }
+        });
+    }
+</script>
 {% endblock %}

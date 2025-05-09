@@ -5,42 +5,98 @@
     <h1>Chloe Walsh</h1>
     <p1>Game Designer</p1>
 </section>
+<center>
+<h1>Portfolio</h1>
+</center>
 
-<section id="projects-section">
-    <h2>Projects</h2>
-    <div class="projects-container">
-        {% for project in projects %}
-        <div class="project-card">
-            {% if project.image %}
-            <div class="card-image">
-                <a href="{{ project.filename }}.html">
-                    <img src="{{ project.image }}" alt="{{ project.title }}" style="height: 100%">
-                  </a>
-            </div> 
-            {% endif %}
-            <div class="card-content">
-                <h3>{{ project.title }}</h3>
-                <h4>{{ project.subtitle }}</h4>
-                <p>{{ project.excerpt }}</p>
-                <div class="tech-tags">
-                    {% for tech in project.technologies %}
-                    <span class="tag">{{ tech }}</span>
-                    {% endfor %}
-                </div>
-                <div class="card-links">
-                    <a href="{{ project.filename }}.html" class="view-button">View Project</a>
-                    {% if project.github %}
-                    <a href="{{ project.github }}" class="github-link">GitHub</a>
-                    {% endif %}
-                    {% if project.demo %}
-                    <a href="{{ project.demo }}" class="demo-link">Live Demo</a>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
+<div class="filter-container">
+    <div class="filter-label">Filter by tag:</div>
+    <div class="filter-tags">
+        <span class="filter-tag active" data-filter="all">All</span>
+        {% for tag in all_tags %}
+        <span class="filter-tag" data-filter="{{ tag }}">{{ tag }}</span>
         {% endfor %}
     </div>
-</section>
+</div>
+
+<div class="projects-container" id="projects-container">
+    {% for project in projects %}
+    <div class="project-card" data-tags="{{ project.technologies|join(',') }}">
+        {% if project.image %}
+        <div class="card-image">
+            <a href="{{ project.filename }}.html">
+              <img src="{{ project.image }}" alt="{{ project.title }}">
+            </a>
+        </div>          
+        {% endif %}
+        <div class="card-content">
+            <h3>{{ project.title }}</h3>
+            <h4>{{ project.subtitle }}</h4>
+            <p>{{ project.excerpt }}</p>
+            <div class="tech-tags">
+                {% for tech in project.technologies %}
+                <span class="tag" onclick="filterProjects('{{ tech }}')">{{ tech }}</span>
+                {% endfor %}
+            </div>
+            <div class="card-links">
+                <a href="{{ project.filename }}.html" class="view-button">View Project</a>
+                {% if project.github %}
+                <a href="{{ project.github }}" class="github-link">GitHub</a>
+                {% endif %}
+                {% if project.demo %}
+                <a href="{{ project.demo }}" class="demo-link">Live Demo</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterTags = document.querySelectorAll('.filter-tag');
+        
+        filterTags.forEach(tag => {
+            tag.addEventListener('click', function() {
+                // Remove active class from all tags
+                filterTags.forEach(t => t.classList.remove('active'));
+                
+                // Add active class to the clicked tag
+                this.classList.add('active');
+                
+                // Get the filter value from the tag
+                const filterValue = this.getAttribute('data-filter');
+                
+                // Apply filtering
+                filterProjects(filterValue);
+            });
+        });
+    });
+    
+    function filterProjects(filterValue) {
+        const projects = document.querySelectorAll('.project-card');
+        
+        projects.forEach(project => {
+            const tags = project.getAttribute('data-tags').split(',');
+            
+            if (filterValue === 'all' || tags.includes(filterValue)) {
+                project.style.display = '';
+            } else {
+                project.style.display = 'none';
+            }
+        });
+        
+        // Update active state in filter tags
+        const filterTags = document.querySelectorAll('.filter-tag');
+        filterTags.forEach(tag => {
+            if (tag.getAttribute('data-filter') === filterValue) {
+                tag.classList.add('active');
+            } else {
+                tag.classList.remove('active');
+            }
+        });
+    }
+</script>
 
 <section id="about-preview">
     <h2>About Me</h2>

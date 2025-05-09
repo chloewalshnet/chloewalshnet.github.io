@@ -60,6 +60,7 @@ def copy_static_files():
         {"src": os.path.join("templates", "script.js"), "dest": "script.js"},
         {"src": os.path.join("templates", "components.js"), "dest": "components.js"},
         {"src": os.path.join("templates", "styles.css"), "dest": "styles.css"},
+        # We don't need to copy style.css as it's redundant with styles.css
     ]
     
     # Create destination directories if needed
@@ -82,8 +83,6 @@ def copy_static_files():
                 create_default_file(dest_path, DEFAULT_SCRIPT_JS)
             elif file_info["dest"] == "components.js":
                 create_default_file(dest_path, DEFAULT_COMPONENTS_JS)
-            elif file_info["dest"] == "styles.css":
-                create_default_file(dest_path, DEFAULT_STYLES_CSS)
 
 # Default content for static files
 DEFAULT_SCRIPT_JS = """// Basic JavaScript for the site
@@ -104,160 +103,6 @@ function highlightCurrentPage() {
 document.addEventListener('DOMContentLoaded', function() {
   highlightCurrentPage();
 });"""
-
-# Update the DEFAULT_STYLES_CSS to match our new styles.css file
-DEFAULT_STYLES_CSS = """/* Color Variables */
-:root {
-  --primary-color: #4e8cca; /* Lighter blue */
-  --primary-light: #6ca2d4; /* Even lighter blue */
-  --primary-dark: #3a6d9a; /* Medium blue */
-  --accent-purple: #9370DB; /* Medium orchid - more feminine purple */
-  --accent-teal: #5ab8b8; /* Lighter teal */
-  --accent-rose: #d16b80; /* Soft rose color */
-  --dark-bg: #293548; /* Lighter navy background */
-  --dark-bg-alt: #384862; /* Slightly lighter navy */
-  --dark-content: rgba(45, 55, 75, 0.9); /* Lighter content background */
-}
-
-/* Basic Page Styling */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  color: #fff;
-  background: var(--dark-bg);
-  overflow-x: hidden;
-}
-
-/* Header and Navigation */
-header {
-  background-color: var(--dark-bg-alt);
-  padding: 1.5rem 0;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  z-index: 1030;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 0.5rem;
-  position: relative;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-nav ul li a:after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background: var(--primary-color);
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
-}
-
-nav ul li a:hover:after, 
-nav ul li a.active:after {
-  width: 100%;
-}
-
-/* Main Content */
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-article {
-  margin-bottom: 2rem;
-}
-
-h1, h2, h3 {
-  margin-bottom: 1rem;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-
-ul {
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-a {
-  color: var(--primary-light);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--primary-color);
-}
-
-/* Footer */
-footer {
-  background-color: var(--dark-bg-alt);
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 2rem;
-}
-
-/* Project Cards */
-.project-card {
-  background-color: rgba(20, 20, 20, 0.9);
-  color: #fff;
-  border: 2px solid var(--primary-color);
-  border-radius: 10px;
-  margin-bottom: 2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 0 15px rgba(125, 185, 219, 0.2);
-  overflow: hidden;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(125, 185, 219, 0.3);
-}
-
-/* Blog Tags */
-.tag {
-  background-color: var(--primary-dark);
-  padding: 0.2rem 0.5rem;
-  border-radius: 3px;
-  margin-right: 0.5rem;
-  color: #fff;
-  font-size: 0.85rem;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  nav ul li {
-    margin: 0.5rem 0;
-  }
-}
-"""
 
 def create_default_file(filepath, content):
     """Create a default file with the specified content"""
@@ -282,14 +127,36 @@ def build_blogs():
     return blogs
 
 def build_index(projects, about_content):
+    # Extract all unique technology tags from projects
+    all_tags = set()
+    for project in projects:
+        if 'technologies' in project:
+            all_tags.update(project['technologies'])
+    
+    # Sort the tags alphabetically
+    all_tags = sorted(list(all_tags))
+    
     context = {
         "projects": projects,
-        "about": about_content
+        "about": about_content,
+        "all_tags": all_tags
     }
     render_page("index.html", context, "index.html")
 
 def build_portfolio(projects):
-    context = {"projects": projects}
+    # Extract all unique technology tags from projects
+    all_tags = set()
+    for project in projects:
+        if 'technologies' in project:
+            all_tags.update(project['technologies'])
+    
+    # Sort the tags alphabetically
+    all_tags = sorted(list(all_tags))
+    
+    context = {
+        "projects": projects,
+        "all_tags": all_tags
+    }
     render_page("portfolio.html", context, "portfolio.html")
 
 def build_projects():
