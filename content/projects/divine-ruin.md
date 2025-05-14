@@ -5,7 +5,7 @@ excerpt: Divine Ruin is a 3D RPG prototype that I am making in Unreal.
 description: Divine Ruin is a 3D RPG prototype that I am making in Unreal.
 technologies: [Unreal Engine, Blueprints, Narrative Design]
 order: 2
-image: ../content/assets/images/divine-ruin/Divine.png
+image: ../content/assets/images/divine-ruin/goodness_dialouge.png
 ---
 
 
@@ -28,7 +28,7 @@ The new direction made a lot more sense for the kind of story I wanted to tell, 
 <img src="../content/assets/images/divine-ruin/goodness_dialouge.png" width="720">
 
 
-## Challenges & What Changed
+## Challenges and What Changed
 
 **Pivoting the Project**
 Shifting from a 2D platformer to a 3D RPG wasn’t just a change in perspective; it was a total rework of the game’s identity. I felt kind of stuck for a while, unsure how to move forward, especially since I’d thrown out the more action-heavy systems I started with. But diving into research and thinking about what I wanted the player to feel helped me find my footing again. Moving into Unreal also gave me a clearer sense of tone and atmosphere, which made design choices click into place faster.
