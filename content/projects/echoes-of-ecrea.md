@@ -3,7 +3,7 @@ title: Echoes of Ecrea
 subtitle: System Design RPG
 excerpt: Echoes of Ecrea was a semester-long assignment focused on the system design of a conceptual RPG. I had a lot of fun with this project as I genuinely enjoy designing systems and creating documentation. 
 description: Echoes of Ecrea was a semester-long assignment focused on the system design of a conceptual RPG. I had a lot of fun with this project as I genuinely enjoy designing systems and creating documentation. 
-technologies: [Photoshop, Word]
+technologies: [Systems Design]
 order: 6
 image: ../content/assets/images/echoes/Inventory HUD.png
 ---

@@ -3,7 +3,7 @@ title: Essence Bound
 subtitle: Narrative Proof of Concept
 excerpt: A narrative system where character relationships and player decisions create emergent storytelling.
 description: A narrative-focused proof of concept exploring dynamic storytelling systems and branching dialogue.
-technologies: [Word]
+technologies: [Narrative Design]
 order: 4
 image: ../content/assets/update_4_3_25/Essence.png
 ---
@@ -31,9 +31,9 @@ Getting the chance to craft detailed dialogue scenes was especially rewarding. I
 **Branching Stories:**
 I am a huge fan of branching storylines in video games. But when it ultimately came down to making a branching storyline for a video game myself, it was a challenge. Some of the first feedback I received from my professor when I wrote out the entire storyline was that it would make a great film or book but not a choice-based RPG with a branching narrative. While that might’ve been a bit hard to hear at the time, it was true and forced me to reexamine the commonalities and differences between different forms of storytelling.
 
+**Script Sample**
 <embed src="../content/assets/images/essence/Essence Bound Script Dialogue.pdf" width="100%" height="760" type='application/pdf'>
 
-<embed src="../content/assets/images/essence/Narrative Bible.pdf" width="100%" height="760" type='application/pdf'>
-
+**World Building Documentation**
 <embed src="../content/assets/images/essence/World Overview.pdf" width="100%" height="760" type='application/pdf'>
 

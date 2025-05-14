@@ -3,36 +3,56 @@ title: Divine Ruin
 subtitle: RPG Prototype
 excerpt: Divine Ruin is a 3D RPG prototype that I am making in Unreal.
 description: Divine Ruin is a 3D RPG prototype that I am making in Unreal.
-technologies: [Unreal Engine, Blueprint, Unreal Dialogue Plugin]
-order: 5
+technologies: [Unreal Engine, Blueprints, Narrative Design]
+order: 2
 image: ../content/assets/images/divine-ruin/Divine.png
 ---
 
-<iframe width="720" height="480"
-src="https://www.youtube.com/embed/2PhhLuQ0KWg?autoplay=1&mute=1">
-</iframe>
 
+<iframe width="720" height="480"
+src="https://www.youtube.com/embed/F30pAhJ1jF0?autoplay=1&mute=1">
+</iframe>
 
 **Genre:** 3D RPG
 
-**Engine:** Unreal
+**Engine:** Unreal Engine
 
 **Timeframe:** In-Progress
 
 ## Overview
 
-Divine Ruin started out as a completely different game. Originally, I pitched it as a 2D platformer that was story-driven but included a lot of action and combat. My professor liked my pitch and told me to go for a prototype. However, after talking more about the project and looking at my writing, my professor suggested I do a top-down RPG that was focused on dialogue and story instead. 
-Divine Ruin is still a work in progress and not a finished prototype, but I’ve made significant steps to ensure that the prototype is done this semester.
+Divine Ruin didn’t start as the game it is now. It began as a 2D action platformer, lots of jumping, combat, and momentum. But after getting some feedback on the writing and chatting more with my professor, I ended up pivoting hard into something else: a 3D top-down RPG, built around dialogue, narrative choices, and slower, more deliberate pacing.
 
-## Challenges
+The new direction made a lot more sense for the kind of story I wanted to tell, and the kind of games I love. I leaned into influences like Disco Elysium and Divinity: Original Sin 2, games where you spend more time talking than fighting, and where the story is the gameplay. Divine Ruin is still a work in progress, but it’s already helped me grow a lot as a designer.
 
-**Pivoting from a 2D Platformer to a 3D Top-Down RPG**
-The biggest challenge I’ve faced so far with Divine Ruin is feeling stuck after I pivoted it from a 2D platformer to a 3D top-down RPG. I was excited by the idea of a game that was similar to games I love, like Disco Elysium, and also very dialogue-heavy, but I also felt that I didn’t know where to take it. I felt lost with its direction for a little while, but with more research into games, I wanted it to look like, I was able to determine where it was going. Going into Unreal also helped me determine what I wanted the game to look like. 
+<img src="../content/assets/images/divine-ruin/goodness_dialouge.png" width="720">
 
-<embed src="../content/assets/images/divine-ruin/Chloe_Walsh_BeatSheet.pdf" width="100%" height="720" type='application/pdf'>
 
-<embed src="../content/assets/images/divine-ruin/Chloe_Walsh_CharacterDescriptions.pdf" width="100%" height="720" type='application/pdf'>
+## Challenges & What Changed
 
+**Pivoting the Project**
+Shifting from a 2D platformer to a 3D RPG wasn’t just a change in perspective; it was a total rework of the game’s identity. I felt kind of stuck for a while, unsure how to move forward, especially since I’d thrown out the more action-heavy systems I started with. But diving into research and thinking about what I wanted the player to feel helped me find my footing again. Moving into Unreal also gave me a clearer sense of tone and atmosphere, which made design choices click into place faster.
+
+**The Dialogue System: From Plugin to Blueprints**
+
+Originally, I used a third-party dialogue plugin to handle branching conversations. It got the job done...when it wasn’t crashing. And even when it worked, it felt clunky, like I was constantly working around the tool instead of with it.
+
+Eventually, I decided to rebuild the system from scratch using Blueprints. I followed a tutorial to get started, but ended up customizing a lot of it to better fit what I needed. Not only did the crashes stop, but I finally had full control over how dialogue flowed. I could add logic, handle choices, and gate things behind variables; it just worked, and I understood why it worked. That felt good.
+
+This shift taught me a lot, not just about how to build systems in Unreal, but about the long-term cost of relying on tools you don’t fully understand. Writing my own system took longer upfront, but it saved me time and headaches later. It also gave me the confidence to keep building things from the ground up.
+
+
+<img src="../content/assets/images/divine-ruin/Divine.png" width="720">
+<img src="../content/assets/images/divine-ruin/smile_dialouge.png" width="720">
+
+**Takeaways**
+
+More than anything, this project taught me how to think about dialogue not just as writing, but as a system. It showed me the difference between a tool that “sort of works” and a system that fits what I’m trying to build. It also gave me space to improve my Blueprint skills, trust my design instincts more, and start solving problems with systems that worked in the long run instead of band-aids.
+
+Divine Ruin's still in progress, but it has already marked a turning point for me, where I started thinking more like a systems designer and became more confident in my instincts as a game designer. 
+
+**Script Sample**
 <embed src="../content/assets/images/divine-ruin/Divine Ruin Script.pdf" width="100%" height="720" type='application/pdf'>
 
+**Original Pitch**
 <embed src="../content/assets/images/divine-ruin/Walsh_Pitch.pdf" width="100%" height="720" type='application/pdf'>
