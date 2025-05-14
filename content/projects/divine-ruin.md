@@ -5,7 +5,7 @@ excerpt: Divine Ruin is a 3D RPG prototype that I am making in Unreal.
 description: Divine Ruin is a 3D RPG prototype that I am making in Unreal.
 technologies: [Unreal Engine, Blueprints, Narrative Design]
 order: 2
-image: ../content/assets/images/divine-ruin/goodness_dialouge.png
+image: ../content/assets/images/divine-ruin/image.png
 ---
 
 
