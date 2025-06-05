@@ -10,22 +10,36 @@ excerpt: "Hello! I’m Chloe Walsh, a systems-driven designer with a background 
   <img src="../content/assets/images/headshot.png" alt="Headshot" class="gallery-card" style="width: 400px;" />
 </div>
 
-Hey there! I'm Chloe, a passionate game designer with a love for storytelling, immersive worlds, and crafting engaging gameplay experiences. My creative heart beats strongest in the realm of RPGs, where narrative depth meets player-driven choices.
+I’m Chloe Walsh, a systems-focused designer with a background in computer engineering and early experience in VR simulation. I started in Unity building photogrammetry-based virtual experiences under the guidance of a mentor, contributing to museum-style exhibits that emphasized realism and interactivity. From there, I studied engineering before ultimately focusing on game design, where I found the perfect intersection of simulation and storytelling. I now design systems that model logic, interaction, and consequence across both entertainment and applied use cases.
 
-I specialize in designing intuitive gameplay systems, captivating narratives, and engaging quests that invite players into unforgettable adventures. My skills include:
+I specialize in systems design across games and simulations, with experience building branching dialogue systems, turn-based combat, and logic-based interactions in both Unity and Unreal.
 
-- Game Design: Systems design, narrative design, puzzle creation, and quest design.
-- Technical Skills: Unity, Unreal Engine, Unreal Blueprints, scripting in C#, C++.
-- Creative Writing: Worldbuilding, character development, dialogue writing, and branching narratives.
-- Collaboration: Effective teamwork, clear communication, and iterative design approaches.
+##### Core Skills
 
-Games that inspire and shape my approach to design:
+**Systems and Simulation Design:** Gameplay mechanics, logic systems, branching dialogue, turn-based systems, training scenario design, simulation workflows
 
-- Divinity: Original Sin 2 – for its intricate storytelling, deep character interactions, and rich tactical combat.
-- Disco Elysium – for redefining narrative-driven games with profound philosophical themes and unparalleled dialogue systems.
-- Fable 2 – for its whimsical charm, meaningful player choices, and engaging storytelling.
-- The Witcher 3: Wild Hunt – for its expansive open world, impactful storytelling, and compelling side quests.
-- The Elder Scrolls V: Skyrim – for its unparalleled exploration, immersive world, and endless player freedom.
-- Baldur's Gate 3 – for its outstanding narrative depth, reactive world-building, and dynamic combat systems.
+**Programming and Scripting:** C++, C#, Python, Unreal Blueprints, Unity scripting, Arduino
 
-When I'm not diving into game development, you might find me exploring new vegetarian recipes, hanging out with my pets, or planning my next creative adventure. I'm also an avid reader of fantasy and science fiction novels, watching captivating films, and, of course, playing video games.
+**Technical and Engineering Tools:** MATLAB, LabVIEW, Visual Studio, sensor integration, data flow logic
+
+**Engines and Platforms:** Unity, Unreal Engine, VR simulation, photogrammetry tools and workflow
+
+**Version Control:** Git, Perforce
+
+**Visual and 3D Tools:** Blender, Maya, ZBrush, Photoshop
+
+**Narrative and Design Thinking:** Narrative systems, character dialogue, worldbuilding, consequence-driven storytelling
+
+**Collaboration and Process:** Rapid prototyping, documentation for technical and design teams, agile iteration, cross-discipline communication
+
+##### Games that influence my design approach
+
+**Disco Elysium:** for its raw psychological depth, fearless philosophical lens, and total reinvention of what narrative systems can be. There’s nothing else quite like it.
+
+**Fable 2:** for making the world feel truly reactive, where choices about relationships, morality, and property shaped the game around you in personal, systemic ways.
+
+**Skyrim:** for its immersive worldbuilding and freedom to explore; a game where the side quests, factions, and personal choices often eclipse the main story, pulling players into hundreds of hours of emergent adventure.
+
+**Baldur’s Gate 3:** for giving weight to every choice, blending narrative and mechanics so player decisions feel both strategic and emotionally meaningful.
+
+When I’m not building systems or designing mechanics, I’m probably baking, walking my dog, playing games, or reading fantasy and science fiction novels that are just a little too long. I’m especially interested in projects that explore strategy, consequence, and interactive learning, whether in games or applied simulation.
