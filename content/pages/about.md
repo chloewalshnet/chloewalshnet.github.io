@@ -14,7 +14,7 @@ I’m Chloe Walsh, a systems-focused designer with a background in computer engi
 
 I specialize in systems design across games and simulations, with experience building branching dialogue systems, turn-based combat, and logic-based interactions in both Unity and Unreal.
 
-### Core Skills
+## Core Skills
 
 **Systems and Simulation Design:** Gameplay mechanics, logic systems, branching dialogue, turn-based systems, training scenario design, simulation workflows
 
@@ -32,7 +32,7 @@ I specialize in systems design across games and simulations, with experience bui
 
 **Collaboration and Process:** Rapid prototyping, documentation for technical and design teams, agile iteration, cross-discipline communication
 
-### Games that influence my design approach
+## Games that influence my design approach
 
 **Disco Elysium:** for its raw psychological depth, fearless philosophical lens, and total reinvention of what narrative systems can be. There’s nothing else quite like it.
 
