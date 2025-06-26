@@ -9,7 +9,7 @@ order: 7
 <div align="center">
 <iframe width="720" height="480"
 src="https://www.youtube.com/embed/L0zpO7_GRrE?autoplay=1&mute=1">
-</iframe>
+</iframe> </div>
 
 **Genre:** Narrative Systems Prototype
 
