@@ -25,7 +25,6 @@ src="https://www.youtube.com/embed/Nhz9Nz6T5i0?autoplay=1&mute=1">
 <a class="view-button" href="https://zahtahvi.itch.io/mutant-malfunction">Check out the itch.io page!</a>
 </div>
 
-
 # Overview
 
 Mutant Malfunction was a week long game jam team project, a tower defense game developed in Unity where players defend a research lab from waves of mutated creatures. I collaborated with a small team, contributing systems implementation, UI design, and narrative framing.
@@ -52,7 +51,7 @@ This work helped improve player clarity, especially during early waves, and allo
 <div align="center">
 <img src="../content/assets/images/mutant/fig2.jpg" alt="UI Elements" style="width:75%;" />
 </div>
-### ⚔️ Tower Balancing
+### Tower Balancing
 
 I handled numerical balance for the tower economy, tuning:
 
