@@ -4,7 +4,7 @@ subtitle: Narrative Systems Prototype
 excerpt: Corporate Investigator is a short systems-focused prototype where I designed an intent-driven dialogue system with trust-based consequences. The project explores how tone, topic, and systemic trust affect conversation flow and player agency.
 technologies: [Unity, C#, Narrative Design, Systems Design]
 image: ../content/assets/images/corporate-investigator/InvestigatorCover.png
-order: 7
+order: 6
 ---
 <div align="center">
 <iframe width="720" height="480"
@@ -19,7 +19,7 @@ src="https://youtu.be/L0zpO7_GRrE">
 
 **Timeframe:** 1 week
 
-## Inspiration & Idea Development
+## Inspiration and Idea Development
 
 The idea for Corporate Investigator came after watching a YouTube lecture on dialogue systems, where the speaker referenced a short game called *We Should Talk.* In that game, players construct sentences from modular parts, which shapes both the tone and content of each conversation.
 
@@ -38,7 +38,7 @@ Built solo over one week, the project focuses on:
 * Trust as a systemic variable
 * A custom UI with multiple interactive "apps."
 
-The visuals are simple — this was always about system design, not polish.
+The visuals are simple as I was focused on system design.
 
 The design challenge was substantial: I wanted to make dialogue feel like a puzzle, with real player agency driving what unfolds.
 

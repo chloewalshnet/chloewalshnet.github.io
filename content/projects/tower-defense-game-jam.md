@@ -3,11 +3,10 @@ title: Mutant Malfunction
 subtitle: Tower Defense Game Jam
 description: A tower defense game that I made with a small team in a week. 
 excerpt: A tower defense game that I made with a small team in a week. 
-technologies: [Unity, C#]
+technologies: [Unity, C#, Systems Design, Narrative Design]
 image: ../content/assets/images/mutant/logo.png
 order: 3
 ---
-
 **Genre:** 2D RPG
 
 **Role:** Game Design, Programming
@@ -26,29 +25,43 @@ src="https://www.youtube.com/embed/Nhz9Nz6T5i0?autoplay=1&mute=1">
 <a class="view-button" href="https://zahtahvi.itch.io/mutant-malfunction">Check out the itch.io page!</a>
 </div>
 
+
 # Overview
 
-A tower defense game that I made with a small team in a week. 
-
+Mutant Malfunction was a week long game jam team project, a tower defense game developed in Unity where players defend a research lab from waves of mutated creatures. I collaborated with a small team, contributing systems implementation, UI design, and narrative framing.
 
 # My Contributions
-**Beginning Dialogue and Backstory**
 
-I wrote the beginning dialogue and expanded upon the backstory that had been brainstormed by some of my other teammates. This gave a good basis for the rest of the team concerning where our game was taking place. I also programmed and implemented the cut scene that opens the game. 
+### Opening Cutscene & Narrative Setup
+
+I implemented the game's opening cutscene and wrote the initial dialogue, expanding on a world concept proposed by teammates. My goal was to establish narrative tone and setting quickly, giving players context for the gameplay and giving the team a clear foundation for visual and audio design.
 
 <div align="center">
 <img src="../content/assets/images/mutant/fig1.png" alt="Opening Dialogue" style="width:75%;" />
 </div>
+### UI Implementation & Tooltip Systems
 
-**UI Elements and Volume Control**
-I programmed some of the UI elements, including the tooltips, so that the towers all have descriptions attached to them. I also designed and programmed the menus and volume control. 
+I scripted interactive UI elements including:
+
+* Tooltip systems for towers, allowing players to see descriptions/stats
+* Volume control and main menu functionality
+* A functional pause menu with adjustable settings
+
+This work helped improve player clarity, especially during early waves, and allowed for quick tuning during playtesting.
 
 <div align="center">
 <img src="../content/assets/images/mutant/fig2.jpg" alt="UI Elements" style="width:75%;" />
 </div>
+### ⚔️ Tower Balancing
 
-**Tower Balancing**
-I adjusted the prices and damage of each of the towers so that they were more balanced to the enemies. 
+I handled numerical balance for the tower economy, tuning:
+
+* Tower damage and range to differentiate roles
+* Upgrade and purchase costs to maintain difficulty pacing
+* Enemy health scaling in relation to player power curve
+
+I used feedback from team playtests to adjust values, ensuring no dominant strategy emerged and that weaker towers still had niche use.
 
 # Challenges
-Communicating over multiple time zones was a significant development challenge, but the team was able to make up for it with our great lead, who worked hard to keep communication between everyone clear.
+
+Working across multiple time zones made coordination difficult at times, but I collaborated closely with our project lead and other designers to maintain clarity and meet our scope goals within the week. Quick iteration and feedback cycles helped the team stay aligned.
