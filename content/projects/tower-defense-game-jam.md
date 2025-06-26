@@ -31,7 +31,7 @@ Mutant Malfunction was a week long game jam team project, a tower defense game d
 
 # My Contributions
 
-### Opening Cutscene & Narrative Setup
+### Opening Cutscene and Narrative Setup
 
 I implemented the game's opening cutscene and wrote the initial dialogue, expanding on a world concept proposed by teammates. My goal was to establish narrative tone and setting quickly, giving players context for the gameplay and giving the team a clear foundation for visual and audio design.
 
